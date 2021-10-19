@@ -37,6 +37,25 @@
     font-weight: 600;
 }
 
+.navbar .logo a span {
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: #fff;
+}
+
+
+/* menu btn styling */
+
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
 .navbar .menu li {
     list-style: none;
     display: inline-block;
@@ -51,6 +70,10 @@
 }
 
 .navbar .menu li a:hover {
+    color: crimson;
+}
+
+.navbar .navbar.sticky .menu li a:hover {
     color: crimson;
 }
 
@@ -88,4 +111,13 @@
 
 .home .home-content .intro-more a {
     color: white;
+}
+
+
+/* responsive media query */
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
 }
